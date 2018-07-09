@@ -9,11 +9,26 @@ new Vue({
     data:{
        name:"田田",
         age:23,
-        height:175
+        height:175,
+        site:"https://www.baidu.com",
+        num:23,
+        x:0,
+        y:0,
     },
     methods:{
        greet:function (nm) {
            return "hello"+nm;
-       }
+       },
+       add:function () {
+           return this.num+=10;
+       },
+        des:function () {
+            return this.num-=10;
+        },
+        zuobiao:function (event) {
+            this.x=event.offsetX;
+            this.y=event.offsetY;
+        }
     }
 });
+

@@ -12,7 +12,30 @@
     <h2>年龄:{{age}}</h2>
     <h3>身高:{{height}}</h3>
     {{greet("海海")}}
+    <a v-bind:href="site">百度</a>
+
+
+    <hr>
+
+    <h1>点击事件</h1>
+    <button v-on:click="num++">增1</button>
+    <button v-on:click="num--">减1</button>
+    <button v-on:dblclick="add">增10</button>
+    <button v-on:dblclick="des">减10</button>
+    <h2>数量为：{{num}}</h2>
+
+    <hr>
+<h2>第五课时</h2>
+    <div id="canvas" v-on:mousemove="zuobiao" style="background-color: lightblue;height: 500px;width: 500px;">
+        {{x}},{{y}}
+
+    </div>
+
+    <hr>
+
 </div>
+
+
 <script src="app.js">
 
 </script>
