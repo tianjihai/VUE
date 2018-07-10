@@ -15,7 +15,10 @@ new Vue({
         x:0,
         y:0,
         name2:"",
-        age2:""
+        age2:"",
+        a:0,
+        b:0,
+        age3:23,
     },
     methods:{
        greet:function (nm) {
@@ -37,6 +40,12 @@ new Vue({
         },
         logAge:function () {
             this.age2=this.$refs.age2.value;
+        },
+        addToA:function () {
+            return this.a+this.age3;
+        },
+        addToB:function () {
+            return this.b+this.age3;
         }
 
     }
