@@ -14,6 +14,8 @@ new Vue({
         num:23,
         x:0,
         y:0,
+        name2:"",
+        age2:""
     },
     methods:{
        greet:function (nm) {
@@ -28,7 +30,15 @@ new Vue({
         zuobiao:function (event) {
             this.x=event.offsetX;
             this.y=event.offsetY;
+        },
+
+        logName:function () {
+            this.name2=this.$refs.name2.value;
+        },
+        logAge:function () {
+            this.age2=this.$refs.age2.value;
         }
+
     }
 });
 
